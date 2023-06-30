@@ -1,10 +1,11 @@
 
 import { useState } from "react";
 import axios from 'axios';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 export default function Form() {
  
   const url="https://hotel-backend-enam.onrender.com/ownerRegister";
+  const navigate=useNavigate()
   const [data, setData] = useState({
     hotelName: "",
     email: "",
@@ -17,6 +18,9 @@ const handledata=async(e)=>{
  await axios.post(url,data)
   .then((res)=>alert(res.data.msg))
   .catch((err)=>{console.log(err);})
+
+  navigate('/Ologin')
+
 }
  
 

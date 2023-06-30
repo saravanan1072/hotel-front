@@ -6,10 +6,9 @@ export default function Admin() {
     <div>
       <Navbar/>
       <div className='admin-back'>
+      <h1 className='admin-home'>Welcome back </h1>
     
-    <div>
-    <h1 className='admin-home'>Welcome back </h1>
-    </div>
+  
     </div>
     </div>
    

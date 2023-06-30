@@ -1,5 +1,6 @@
 import axios from 'axios';
-import logo from '../../Images/oyo-logo.png'
+import logo from '../../Images/t.jpg'
+
 import React, { useEffect, useState } from 'react'
 import { useNavigate,Link } from 'react-router-dom'
 import { login } from './Ulogin';

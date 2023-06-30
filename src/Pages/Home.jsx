@@ -1,6 +1,5 @@
 import React from 'react'
-import logo from '../Images/oyo-logo.png'
-import back from '../Images/images1.jpg'
+import logo from '../Images/t.jpg'
 import {Link} from 'react-router-dom'
 export default function Home() {
   return (
@@ -21,8 +20,8 @@ export default function Home() {
    
    </div>
    <div className='flexx'>
-    <h1>Welcome to our portal</h1><br/>
-   <img className='hotelss' src={back} alt='background'/>
+    <h1 >Welcome to our portal</h1><br/>
+   
 
 
    </div>

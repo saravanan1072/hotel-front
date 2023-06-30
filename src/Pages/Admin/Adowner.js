@@ -16,6 +16,7 @@ axios.get("https://hotel-backend-enam.onrender.com/ownerinfo")
     <div> 
       <Navbar/>
     <div className='center'>
+    
    <div>
    <table border={1}>
         <tr>
