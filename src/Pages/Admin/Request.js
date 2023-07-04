@@ -39,7 +39,7 @@ dispatch(clear())
           <td>{state?.data?.hotelName}</td>
           <td>{state?.data?.address}</td>
           <td>{state?.data?.price}</td>
-          <td> <button onClick={handle} className='btn'>Approve</button>   </td>
+          <td> <button onClick={handle} className='btn m'>Approve</button>   </td>
         </tr>
 
 

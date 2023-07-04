@@ -1,10 +1,9 @@
 
 import { useState } from "react";
-import Navbar from './Navbar'
 import { name } from "./Login";
 import {useDispatch}from 'react-redux'
 import {  update } from "../../Utility/Slice";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 export default function Owner() {
   const toggle=true;
   const [file,setFile]=useState()
@@ -45,8 +44,15 @@ navigate('/owner')
     setData({ ...data, [e.target.name]: e.target.value });
   };
   return (
-  <div>
-     <Navbar/>
+  <div className="back-logo">
+       <div className='owner-nav'>
+        {/* <div className='Admin'> */}
+          <ol>
+            <li>Home Page</li>
+            <Link to='/'> <li>Log out</li></Link>
+          </ol>
+        {/* </div> */}
+      </div>
     <div className="con">
   
     <div className="multiple">
@@ -89,7 +95,7 @@ navigate('/owner')
           
            onChange={convertFile}
           
-         /><br/> <span style={{color:"red"}}>Insert PNG image format</span>
+         /><br/> <span style={{color:"red"}}>Insert images less than 1MB* size</span>
          <br></br>
          <label htmlFor="Address">Address : </label>
          <input

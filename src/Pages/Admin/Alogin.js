@@ -38,7 +38,7 @@ const handledata=async(e)=>{
     <div>
       
       <div className="admin-container">
-     <div className='admin-con-child'>
+     <div className='admin-con-child new'>
      <h1 style={{textAlign:"center"}}>ADMIN FORM</h1>
         <form onSubmit={handledata}>
           <label htmlFor="name">Name : </label>

@@ -79,9 +79,9 @@ export default function Book() {
         "key": "rzp_test_Hk1Cj8n9Wbk9zP", // Enter the Key ID generated from the Dashboard
         "amount": price*100 , // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
         "currency": "INR",
-        "name": "OYO Portal",
+        "name": "CENTRO L E O N",
         "description": "Test Transaction",
-        "image": "https://getlogovector.com/wp-content/uploads/2020/11/oyo-logo-vector.png",
+        "image": "https://ubiquitous-jalebi-68f275.netlify.app/static/media/t.a2ffebced3bddb9b59c8.jpg",
         "order_id": orderId, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
         "handler":async function (response){
             alert(response.razorpay_payment_id);

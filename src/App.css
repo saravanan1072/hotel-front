@@ -5,7 +5,7 @@
 
 .header{
   /* background-color: rgba(213, 113, 76, 0.537); */
-  min-width: 100%;
+width: 100%;
   height: 100vh;
   background-image: url('./Images/photo.jpg');
   background-repeat: no-repeat;
@@ -66,13 +66,6 @@
   font-size: 42px;
   font-weight: 500;
 }
-.hotelss{
-  margin-top:50px;
-  min-width: 800px;
-  border-radius: 20px;
-}
-
-
 
 
 /* //admin-container */
@@ -171,12 +164,14 @@ input{
  margin-top: -28px;
   height: 100vh;
  display: flex;
+ flex-wrap: wrap;
  justify-content: center;
+
 }
 table{
   margin-top: 50px;
   width: 200%;
-  margin-left: -100px;
+  margin-left: -150px;
   text-align: center;
 
 
@@ -233,14 +228,41 @@ margin:200px;
   text-align: center;
   position: relative;
   top: 100px;
+ 
+}
+.back-logo{
+  margin-top: -25px;
+  background-image: url('./Images/best.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 .con{
   width: 80%;
   height: 100vh;
   margin: auto;
-  background-image: url('./Images/best.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+ 
+}
+.owner-nav {
+
+  font-size: 28px;
+  font-weight: bolder;
+  margin-right: 150px;
+  color: white;
+  position: relative;
+  top: 50px;
+  z-index: 10;
+
+}
+.owner-nav ol{
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.owner-nav ol li{
+  margin: 10px;
+  color: white;
 }
 
 
@@ -364,7 +386,7 @@ margin:200px;
 .book-title{
   text-align: center;
   font-size: 32px;
-  text-shadow: 1px 2px black;
+  text-shadow: 1px 1px black;
 
 }
 .book-container,.Description{
@@ -434,6 +456,246 @@ margin:200px;
 
 
 @media (max-width:421px) { 
+
+  .header{
+  width: 100vw;
+    height: 100vh;
+  }
+  
+  
+  #header{
+   
+    margin-left: 0px;
+  
+  }
+  
+  .logo{
+    margin-top: 30px;
+    margin-left: -10px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  .ol,.Admin ol{
+    
+    margin-right: 0px;
+   
+  }
+  
+  
+   .ol li{  
+    margin: 30px;
+  }
+
+  
+  .flexx{
+    position: relative;
+    display: block;
+   
+  }
+  .flexx h1{
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+  }
+  
+  /* admin */
+.admin-container{
+  position: relative;
+   text-align: center;  
+   display: flex;
+   justify-content: center;
+   z-index: 1;
+   background-image: url('./Images//admin.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+  
+   
+ }
+ .admin-con-child{
+   height: 300px;
+   width: auto;
+   align-content: center;
+ border: 1px solid black;
+ border-radius: 20px;
+ background-color: white;
+ padding: 30px;
+ margin:auto;
+ }
+ 
+ 
+ 
+ 
+ 
+ label{
+   font-size: 18px;
+   font-weight: 400;
+ }
+ input{
+   width: 150px;
+  
+ }
+
+ 
+.Admin {
+  width: 100%;
+  color: wheat;
+ background-color: whitesmoke;
+ 
+}
+
+.nav-home{
+  position: relative;
+  color: white;
+  top: 40px;
+  margin-left: 100px;
+  font-size: 28px;
+  font-weight: bolder;
+  z-index: 1;
+
+}
+
+.admin-back{
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  margin-top: -28px;
+  background-image: url('./Images//admin-office-binder.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.admin-home{
+  position: relative;
+  top: 150px;
+  /* left: 320px; */
+  text-align: center;
+  color: white;
+  font-size: 42px;
+  z-index: 3;
+}
+
+.center{
+ 
+ margin-top: -28px;
+  height: 100vh;
+ display: flex;
+
+
+
+}
+table{
+  
+  margin-top: 50px;
+  width: 100%;
+  margin-left: 0px;
+  text-align: center;
+
+
+}
+.m{
+  width: auto;
+}
+
+.reg-con{
+  
+  height: auto;
+  width: 350px;
+ 
+margin:0px;
+margin-top: 200px;
+}
+.owner-nav {
+  margin-right: 10px;
+ 
+
+}
+
+
+
+.child{
+  width: 360px;
+  height: 400px;
+}
+
+.child-image-size{
+  width: 340px;
+  height: 250px;
+  padding: 20px 0px 0px 10px;
+  align-items: center;
+}
+
+.head{
+  font-size: large;
+  margin-left: 10px;
+}
+.addresss{
+  font-size: medium;
+  margin-left: 10px;
+}
+
+
+
+
+
+
+.user-logo{
+  margin-left:0px;
+  position: relative;
+ 
+  z-index: 100;
+  width: 100px;
+  border-radius: 50%;
+  /* height: 50px; */
+  
+}
+.nav-user-right ol{
+  
+ 
+  flex-direction: column;
+  justify-content: center;
+ 
+
+}
+.nav-user-right ol li{
+  margin: 10px;
+}
+.log{
+  color: rgba(255, 255, 255, 0.671);
+}
+  
+
+.book-container,.Description{
+  width: 100%;
+  margin: auto;
+}
+.book-img{
+  width: 300px;
+  border-radius: 20px;
+  height: 300px;
+  margin-left: 50px;
+}
+.book-content{
+  position: relative;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+ 
+}
+
+
+
+
+  
+  
+
+
+
+
+
+/* 
   .multiple{
     width: 100%;
    
@@ -481,5 +743,5 @@ margin:200px;
  border-radius: 20px;
  background-color: white;
  margin:250px;
- }
+ } */
 }
