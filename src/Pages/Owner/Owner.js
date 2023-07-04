@@ -89,7 +89,7 @@ navigate('/owner')
           
            onChange={convertFile}
           
-         /><br/> <span style={{color:"red"}}>Insert less than 1MB* size</span>
+         /><br/> <span style={{color:"red"}}>Insert PNG image format</span>
          <br></br>
          <label htmlFor="Address">Address : </label>
          <input
